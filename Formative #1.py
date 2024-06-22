@@ -7,6 +7,6 @@ def material_waste(total_material,material_units,num_jobs,job_consumption):
     return wasted_material 
 
 def interest(principal,rate,periods):
-    simple_interest = round(principal * rate * periods)
+    simple_interest = principal * rate * periods
     principal += simple_interest
-    return principal // 1
+    return int(principal)
